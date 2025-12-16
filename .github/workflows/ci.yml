@@ -26,8 +26,8 @@ jobs:
         run: echo "${{secrets.DOCKERHUB_TOKEN}}" | docker login -u "${{secrets.DOCKER_USERNAME}}" --password-stdin
 
       - name: Build Docker Image
-        run: docker build -t jibrankhalil-jk/week3:${{github.sha}} .
+        run:  docker build -t jibrankhaliljk/week3:${{ github.sha }} .
+
 
       - name: Push Image
-        run: docker push jibrankhaliljk/week3:${{github.sha}}
- 
+        run: docker push jibrankhaliljk/week3:${{ github.sha }}
