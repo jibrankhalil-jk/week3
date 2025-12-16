@@ -1,2 +1,2 @@
 def sample_test():
-    assert "app running" == "app running"
+    assert 1 == 1
